@@ -5,6 +5,7 @@
     left: 0;
     padding-block: 32px;
     background-color: var(--bg-color);
+    z-index: var(--layer-2);
     transition: box shadow var(--transition-time);
 }
 

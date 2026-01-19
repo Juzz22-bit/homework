@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="./icons/nike-favicon-48x48.ico" type="image/x-icon">
-    <script defer src="./JS/index.js" type="module"></script>
+    <script src="./JS/index.js" type="module"></script>
     <title>Nike Air Mag</title>
 </head>
 
@@ -16,7 +16,7 @@
             <a href="#" class="logo header__logo">
                 <img src="./icons/logo-icon.svg" width="50" height="20" alt="Логотип Nike">
             </a>
-            <nav class="menu header__menu" id="header__menu" area-lable="Главное меню">
+            <nav class="menu header__menu" id="header__menu" aria-label="Главное меню">
                 <ul class="menu__list">
                     <li class="menu__item"><a href="#air-mag" class="menu__link" lang="en">Air Mag</a></li>
                     <li class="menu__item"><a href="#sizes" class="menu__link">Размеры</a></li>
@@ -48,7 +48,31 @@
             </div>
         </div>
     </header>
-
+    <main class="main">
+        <section class="hero">
+            <div class="container  hero-container">
+                <header class="hero__header">
+                    <ul class="hero__benefits-list">
+                        <li class="hero__benefits-item">Стиль</li>
+                        <li class="hero__benefits-item">Скорость</li>
+                    </ul>
+                    <h1 class="hero__title">
+                        Nike <span class="hero__title-accent">Air</span> Mag
+                    </h1>
+                </header>
+                <img class="hero__img" src="./images/Nike1.png" width="846px" height="713px"
+                    alt="Кроссовок Nike-Air с жёлтым кругом под подошвой">
+                <footer class="hero__footer">
+                    <a class="hero__ditals" href="#">
+                        Подробнее
+                        <svg width="24" height="24">
+                            <use class="hero__ditals-icon" href="./icons/main-sprite.svg#arrow-right"></use>
+                        </svg>
+                    </a>
+                </footer>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
