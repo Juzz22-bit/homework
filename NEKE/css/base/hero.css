@@ -168,7 +168,7 @@
     .hero__img {
     position: absolute;
     top: 88px;
-    left: 33%;
+    left: 27%;
     transform: translateX(-25%);
     z-index: var(--layer-negative);
 }
