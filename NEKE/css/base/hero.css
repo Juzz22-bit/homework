@@ -153,24 +153,24 @@
     z-index: var(--layer-negative);
 }
 }
+.hero__img{
+    position: absolute;
+    top: 88px;
+    transform: translateX(-25%);
+    z-index: var(--layer-negative);
+}
 
 @media (width > 768px){
     .hero__img {
-    position: absolute;
-    top: 88px;
     left: 33%;
-    transform: translateX(-25%);
-    z-index: var(--layer-negative);
+
 }
 }
 
 @media (width <= 768px){
     .hero__img {
-    position: absolute;
-    top: 88px;
     left: 27%;
-    transform: translateX(-25%);
-    z-index: var(--layer-negative);
+
 }
 }
 
