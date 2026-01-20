@@ -60,8 +60,10 @@
                         Nike <span class="hero__title-accent">Air</span> Mag
                     </h1>
                 </header>
-                <img class="hero__img" src="./images/Nike1.png" width="846px" height="713px"
-                    alt="Кроссовок Nike-Air с жёлтым кругом под подошвой">
+                <picture>
+                    <source srcset="./images/Nike1.webp" type="image/webp">
+                    <img class="hero__img" src="./images/Nike1.png" width="846px" height="713px"
+                    alt="Кроссовоки Nike-Air с жёлтым кругом под подошвой"></picture>
                 <footer class="hero__footer">
                     <a class="hero__ditals" href="#">
                         Подробнее
@@ -71,6 +73,32 @@
                     </a>
                 </footer>
             </div>
+        </section>
+        <section id="air-mag" class="air-mag">
+            <div class="container">
+                <h2 class="air-mag__title title-md">Air Mag</h2>
+                <p class="air-mag__description text-regular">Это не просто кроссовки — это шаг в будущее. С уникальным
+                    дизайном и
+                    передовыми технологиями, эти кроссовки вдохновлены легендарной киноделией и готовы сопровождать вас
+                    в любых приключениях.</p>
+                <div class="air-mag__info-wrapper">
+                    <picture>
+                        <source srcset="./images/Nike2.webp" type="image/webp">
+                        <img class="air-mag__info-img" src="./images/Nike2.png" 
+                        width="911" 
+                        height="635"
+                        loading="lazy"
+                        alt="Кроссовоки Nike-Air с жёлтым кругом вокруг">
+                    </picture>
+                    <ul class="air-mag__info-list text-light">
+                        <li class="air-mag__info-item">инновационная технология амортизации, которая обеспечивает
+                            непревзойденную поддержу суставов</li>
+                        <li class="air-mag__info-item">высококачественные синтетические материалы для долговечности
+                            и комфорта</li>
+                    </ul>
+                </div>
+            </div>
+
         </section>
     </main>
 </body>
