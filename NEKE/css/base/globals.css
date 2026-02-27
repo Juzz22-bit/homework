@@ -42,6 +42,8 @@ button:focus-visible {
     font-weight: 400;
 }
 
+
+.title-xs,
 .title-sm,
 .title-md {
     text-transform: uppercase;
@@ -51,6 +53,10 @@ button:focus-visible {
 
 .title-sm {
     font-size: clamp(24px, 16.37px + 2.04vw, 32px);
+}
+
+.title-xs{
+    font-size: 18px;
 }
 
 .title-md {
