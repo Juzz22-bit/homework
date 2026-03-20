@@ -1,0 +1,16 @@
+.burger{
+    width: 24px;
+    height: 24px;
+}
+
+@media (width > 992px){
+    .burger{
+        display: none;
+    }
+}
+
+@media (width <= 992px){
+    .burger{
+        display: block;
+    }
+}
