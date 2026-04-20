@@ -6,20 +6,21 @@
     <title>Diplom-job</title>
     <link rel="shortcut icon" href="./icons/favicon-shopco.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/index.css" />
-    <script src="./js/Diplom.js" type="module"></script>
+    <script defer src="./JS/index.js" type="module"></script>
     
 </head>
 
 <body class="page__body">
     <header class="header">
         <div class="container header__container">
-            <button class="header__burger burger">
-                <svg width="24" height="24">
-                    <use class="burger__icon-menu" href="./icons/sprite.svg#burger"></use>
-                </svg>
+            <button class="header__burger burger" aria-label="Открыть Меню" aria-expanded="false" aria-controls="header__menu">
+                <svg width="24px" height="24px">
+                            <use class="burger__icon-burger" href="./icons/sprite-burger.svg#burger"></use>
+                            <use class="burger__icon-cross" href="./icons/sprite-burger.svg#cross"></use>
+                        </svg>
             </button>
             <a href="#" class="logo header__logo">SHOP.CO</a>
-            <nav class="menu header__menu">
+            <nav class="menu header__menu " id="header__menu">
                 <ul class="menu__list" aria-label="Главное Меню">
                     <li class="menu__item"><a href="#shop" class="menu__link">Магазин</a>
                         <button class="menu__link-button">
@@ -609,7 +610,7 @@
                         </p>
                         <div class="footer__end-cards-list">
                             <svg width="65" height="49">
-                                <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#visa">
+                                <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#Visa">
                                 </use>
                             </svg>
                             <svg width="65" height="49">
@@ -622,6 +623,10 @@
                             </svg>
                             <svg width="65" height="49">
                                 <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#ipay">
+                                </use>
+                            </svg>
+                            <svg width="65" height="49">
+                                <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#gpay">
                                 </use>
                             </svg>
                         </div>
