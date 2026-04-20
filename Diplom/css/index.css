@@ -3,15 +3,15 @@
 @import "./base/fons.css";
 @import "./base/vars.css";
 
-@import "/css/blocks/discount.css";
-@import "./Blocks/header.css";
-@import "/css/blocks/menu.css";
-@import "/css/blocks/burger.css";
-@import "./Blocks/hero.css";
-@import "./Blocks/brands.css";
-@import "./Blocks/new-arrivals.css";
-@import "./Blocks/Leaders-of-sales.css";
-@import "./Blocks/choose-your-style.css";
-@import "./Blocks/reviews.css";
-@import "./Blocks/mailing.css";
-@import "./Blocks/footer.css";
+
+@import "./blocks/header.css";
+@import "./blocks/burger.css";
+@import "./blocks/menu.css";
+@import "./blocks/hero.css";
+@import "./blocks/brands.css";
+@import "./blocks/new-arrivals.css";
+@import "./blocks/Leaders-of-sales.css";
+@import "./blocks/choose-your-style.css";
+@import "./blocks/reviews.css";
+@import "./blocks/mailing.css";
+@import "./blocks/footer.css";
