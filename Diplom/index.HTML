@@ -6,18 +6,20 @@
     <title>Diplom-job</title>
     <link rel="shortcut icon" href="./icons/favicon-shopco.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/index.css" />
-    <script defer src="./JS/index.js" type="module"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="./JS/index.js" type="module"></script>
+
 </head>
 
 <body class="page__body">
     <header class="header">
         <div class="container header__container">
-            <button class="header__burger burger" aria-label="Открыть Меню" aria-expanded="false" aria-controls="header__menu">
+            <button class="header__burger burger" aria-label="Открыть Меню" aria-expanded="false"
+                aria-controls="header__menu">
                 <svg width="24px" height="24px">
-                            <use class="burger__icon-burger" href="./icons/sprite-burger.svg#burger"></use>
-                            <use class="burger__icon-cross" href="./icons/sprite-burger.svg#cross"></use>
-                        </svg>
+                    <use class="burger__icon-burger" href="./icons/sprite-burger.svg#burger"></use>
+                    <use class="burger__icon-cross" href="./icons/sprite-burger.svg#cross"></use>
+                </svg>
             </button>
             <a href="#" class="logo header__logo">SHOP.CO</a>
             <nav class="menu header__menu " id="header__menu">
@@ -47,18 +49,18 @@
                             <use class="header__actions-icon" href="./icons/sprite.svg#seurch__burger">
                             </use>
                         </svg>
-                    <button class="header__actions-button">
-                        <svg width="24" height="24">
-                            <use class="header__actions-icon" href="./icons/sprite.svg#basket">
-                            </use>
-                        </svg>
-                    </button>
-                    <button class="header__actions-button">
-                        <svg width="24" height="24">
-                            <use class="header__actions-icon" href="./icons/sprite.svg#profile">
-                            </use>
-                        </svg>
-                    </button>
+                        <button class="header__actions-button">
+                            <svg width="24" height="24">
+                                <use class="header__actions-icon" href="./icons/sprite.svg#basket">
+                                </use>
+                            </svg>
+                        </button>
+                        <button class="header__actions-button">
+                            <svg width="24" height="24">
+                                <use class="header__actions-icon" href="./icons/sprite.svg#profile">
+                                </use>
+                            </svg>
+                        </button>
                 </div>
             </div>
         </div>
@@ -103,11 +105,6 @@
                     </div>
                 </div>
                 <div class="hero__img">
-                    <picture>
-                        <source srcset="./Images/fashion-menschen.webp" type="image/webp" />
-                        <img class="hero__img-picture-people" src="./Images/fashion-menschen.png"
-                            alt="Парень с девушкой в модной одежде">
-                    </picture>
                     <img class="hero__img-picture-star star-1" src="./icons/black-star-hero.svg" alt="">
                     <img class="hero__img-picture-star star-2" src="./icons/black-star-hero.svg" alt="">
                     <picture>
@@ -120,44 +117,27 @@
         <section class="brands">
             <div class="container container__brends">
                 <div class="brands">
-                    <ul class="brands-list">
-                        <div class="brands-list-first-group">
-                            <li class="brands-list-item">
-                                <a href="#"><svg id="versace" width="166" height="33">
-                                        <use class="brands-icon-link" href="./icons/sprite-brands.svg#Versace"></use>
-                                    </svg></a>
-                            </li>
-                            <li class="brands-list-item">
-                                <a href="#"><svg id="zara" width="91" height="38">
-                                        <use class="brands-icon-link--zara" href="./icons/sprite-brands.svg#Zara"></use>
-                                    </svg></a>
-                            </li>
-                            <li class="brands-list-item">
-                                <a href="#"><svg id="gucci" width="156" height="36">
-                                        <use class="brands-icon-link--gucci" href="./icons/sprite-brands.svg#Gucci">
-                                        </use>
-                                    </svg></a>
-                            </li>
-                        </div>
-                        <div class="brands-list-second-group">
-                            <li class="brands-list-item">
-                                <a href="#">
-                                    <svg id="prada" width="194" height="32">
-                                        <use class="brands-icon-link--prada" href="./icons/sprite-brands.svg#Prada">
-                                        </use>
-                                    </svg></a>
-                            </li>
-                            <li class="brands-list-item">
-                                <a href="#">
-                                    <svg id="calvin-klein" width="207" height="34">
-                                        <use class="brands-icon-link--calvin-klein"
-                                            href="./icons/brends/Calvin Kliein.svg">
-                                        </use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </div>
-                    </ul>
+                    <a href="#"><svg id="versace" width="166" height="33">
+                            <use class="brands__icon-link--Versace" href="./icons/sprite-brands.svg#Versace"></use>
+                        </svg></a>
+                    <a href="#"><svg id="zara" width="91" height="38">
+                            <use class="brands__icon-link--zara" href="./icons/sprite-brands.svg#Zara"></use>
+                        </svg></a>
+                    <a href="#"><svg id="gucci" width="156" height="36">
+                            <use class="brands__icon-link--gucci" href="./icons/sprite-brands.svg#Gucci">
+                            </use>
+                        </svg></a>
+                    <a href="#">
+                        <svg id="prada" width="194" height="32">
+                            <use class="brands__icon-link--prada" href="./icons/sprite-brands.svg#Prada">
+                            </use>
+                        </svg></a>
+                    <a href="#">
+                        <svg id="calvin-klein" width="207" height="34">
+                            <use class="brands__icon-link--calvin-klein" href="./icons/brends/Calvin Kliein.svg">
+                            </use>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </section>
@@ -222,8 +202,8 @@
                                 <h3 class="list-item-info__title title-small">Клетчатая рубашка</h3>
                                 <div class="list-item-info__rating">
                                     <svg width="104" height="19">
-                                        <use class="list-item-info__rating-stars"
-                                            href="./icons/stars/3.5-stars.svg"></use>
+                                        <use class="list-item-info__rating-stars" href="./icons/stars/3.5-stars.svg">
+                                        </use>
                                     </svg>
                                     <p class="list-item-info__rating-numbers text-comment">4.5/<strong
                                             class="list-item-info__rating-numbers-5 text-comment">5</strong></p>
@@ -238,15 +218,15 @@
                         <a class="new-arrivals__item-link" href="#">
                             <picture>
                                 <source srcset="./Images/orange-T-shirt.webp" type="image/webp" />
-                                <img class="new-arrivals__list-item-img"
-                                    src="./Images/orange-T-shirt.png" alt="Чёрная-оранжевая Футболка">
+                                <img class="new-arrivals__list-item-img" src="./Images/orange-T-shirt.png"
+                                    alt="Чёрная-оранжевая Футболка">
                             </picture>
                             <div class="new-arrivals__list-item-info">
                                 <h3 class="list-item-info__title title-small">Футболка с лентой</h3>
                                 <div class="list-item-info__rating">
                                     <svg width="104" height="19">
-                                        <use class="list-item-info__rating-stars"
-                                            href="./icons/stars/4.5-stars.svg"></use>
+                                        <use class="list-item-info__rating-stars" href="./icons/stars/4.5-stars.svg">
+                                        </use>
                                     </svg>
                                     <p class="list-item-info__rating-numbers text-comment">4.5/<strong
                                             class="list-item-info__rating-numbers-5 text-comment">5</strong></p>
@@ -277,8 +257,8 @@
                                 <h3 class="list-item-info__title title-small">Рубашка в полоску</h3>
                                 <div class="list-item-info__rating">
                                     <svg class="list-item-info__rating-stars-5">
-                                        <use class="list-item-info__rating-stars-5"
-                                            href="./icons/stars/5-stars.svg"></use>
+                                        <use class="list-item-info__rating-stars-5" href="./icons/stars/5-stars.svg">
+                                        </use>
                                     </svg>
                                     <p class="list-item-info__rating-numbers text-comment">5/<strong
                                             class="list-item-info__rating-numbers-5 text-comment">5</strong></p>
@@ -324,8 +304,8 @@
                                 <h3 class="list-item-info__title title-small">Свободные бермуды</h3>
                                 <div class="list-item-info__rating">
                                     <svg width="67" height="19">
-                                        <use class="list-item-info__rating-stars"
-                                            href="./icons/stars/3-stars.svg"></use>
+                                        <use class="list-item-info__rating-stars" href="./icons/stars/3-stars.svg">
+                                        </use>
                                     </svg>
                                     <p class="list-item-info__rating-numbers text-comment">4.5/<strong
                                             class="list-item-info__rating-numbers-5 text-comment">5</strong></p>
@@ -347,8 +327,8 @@
                                 <h3 class="list-item-info__title title-small">Потертые узкие джинсы</h3>
                                 <div class="list-item-info__rating">
                                     <svg width="104" height="19">
-                                        <use class="list-item-info__rating-stars"
-                                            href="./icons/stars/4.5-stars.svg"></use>
+                                        <use class="list-item-info__rating-stars" href="./icons/stars/4.5-stars.svg">
+                                        </use>
                                     </svg>
                                     <p class="list-item-info__rating-numbers text-comment">4.5/<strong
                                             class="list-item-info__rating-numbers-5 text-comment">5</strong></p>
@@ -462,6 +442,44 @@
                                 </p>
                             </div>
                         </article>
+                        <article class="swiper-slide reviews__list-item">
+                            <div class="reviews__slide-inner">
+                                <div class="reviews__list-item-stars">
+                                    <svg class="reviews__list-item-stars-5">
+                                        <use href="./icons/stars/5-stars.svg">
+                                        </use>
+                                    </svg>
+                                </div>
+                                <div class="reviews__list-item-name">
+                                    <p class="reviews__list-item-name-text">Роман Ф.</p>
+                                    <img class="reviews__list-item-name-check-mark" width="24" height="24"
+                                        src="./icons/cheak.svg" alt="белая галочка на зелёном фоне">
+                                </div>
+                                <p class="reviews__list-item-comment text-comment">
+                                    «Я в восторге от качества и стиля одежды, которую получил от Shop.co. От
+                                    повседневных вещей до элегантных платьев — каждая покупка превзошла мои ожидания.»
+                                </p>
+                            </div>
+                        </article>
+                        <article class="swiper-slide reviews__list-item  review-2">
+                            <div class="reviews__slide-inner">
+                                <div class="reviews__list-item-stars">
+                                    <svg class="reviews__list-item-stars-5">
+                                        <use href="./icons/stars/5-stars.svg">
+                                        </use>
+                                    </svg>
+                                </div>
+                                <div class="reviews__list-item-name">
+                                    <p class="reviews__list-item-name-text">Артём Г.</p>
+                                    <img class="reviews__list-item-name-check-mark" width="24" height="24"
+                                        src="./icons/cheak.svg" alt="белая галочка на зелёном фоне">
+                                </div>
+                                <p class="reviews__list-item-comment text-comment">
+                                    «Я всегда ищу уникальные модные вещи и был рад открыть для себя Shop.co. Их выбор
+                                    одежды очень разнообразен и полностью соответствует последним модным трендам.»
+                                </p>
+                            </div>
+                        </article>
                         <article class="swiper-slide reviews__list-item  review-2">
                             <div class="reviews__slide-inner">
                                 <div class="reviews__list-item-stars">
@@ -500,6 +518,25 @@
                                 </p>
                             </div>
                         </article>
+                        <article class="swiper-slide reviews__list-item review-3">
+                            <div class="swiper__slide-inner">
+                                <div class="reviews__list-item-stars">
+                                    <svg class="reviews__list-item-stars-5">
+                                        <use href="./icons/stars/5-stars.svg">
+                                        </use>
+                                    </svg>
+                                </div>
+                                <div class="reviews__list-item-name">
+                                    <p class="reviews__list-item-name-text">Анатолий К.</p>
+                                    <img class="reviews__list-item-name-check-mark" width="24" height="24"
+                                        src="./icons/cheak.svg" alt="белая галочка на зелёном фоне">
+                                </div>
+                                <p class="reviews__list-item-comment text-comment">
+                                    «Я в восторге от качества и стиля одежды, которую получил от Shop.co. От
+                                    повседневных вещей до элегантных платьев — каждая покупка превзошла мои ожидания.»
+                                </p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -508,129 +545,120 @@
         </section>
         <footer class="footer">
             <div class="container footer__container">
-                <section class="mailing">
-                    <div class="container mailing__container">
-                        <h2 class="	mailing__title">БУДЬТЕ В КУРСЕ ВСЕХ ПОСЛЕДНИХ НОВОСТЕЙ</h2>
-                        <div class="mailing__interact">
-                            <div class="mailing__interact-email">
-                                <label class="mailing__email-label">
-                                    <button class="mailing__email-button-mail">
-                                        <img class="mailing__email-button-mail-icon" src="./icons/email.svg" width="24"
-                                            height="24" alt="Значок почты" />
-                                    </button>
-                                    <input class="mailing__email-input" type="text" placeholder="Ваша почта"
-                                        name="email" required />
-                                </label>
-                            </div>
-                            <button class="mailing__subscribe">Подписаться на рассылку</button>
+                <div class="container mailing__container">
+                    <h2 class="	mailing__title">БУДЬТЕ В КУРСЕ ВСЕХ ПОСЛЕДНИХ НОВОСТЕЙ</h2>
+                    <div class="mailing__interact">
+                        <div class="mailing__interact-email">
+                            <label class="mailing__email-label">
+                                <button class="mailing__email-button-mail">
+                                    <img class="mailing__email-button-mail-icon" src="./icons/email.svg" width="24"
+                                        height="24" alt="Значок почты" />
+                                </button>
+                                <input class="mailing__email-input" type="text" placeholder="Ваша почта" name="email"
+                                    required />
+                            </label>
                         </div>
+                        <button class="mailing__subscribe">Подписаться на рассылку</button>
                     </div>
-                    <div class="footer__navigation-list">
-                        <article class="footer__list-item-logo">
-                            <a href="#" class="footer__logo logo">
-                                <img class="footer__logo-icon" src="./icons/SHOP.CO.svg" width="166" height="22"
-                                    alt="Логотип shop.co" />
-                            </a>
-                            <p class="footer__navigation-list-item-text text-comment">У нас есть одежда, что подходит
-                                вашему стилю и которой можно гордиться. Для женщин и мужчин.</p>
-                            <div class="footer__media-links-list">
-                                <svg width="28" height="28">
+                </div>
+                <div class="footer__navigation-list">
+                    <article class="footer__list-item-logo">
+                        <a href="#" class="footer__logo logo">
+                            <img class="footer__logo-icon" src="./icons/SHOP.CO.svg" width="166" height="22"
+                                alt="Логотип shop.co" />
+                        </a>
+                        <p class="footer__navigation-list-item-text text-comment">У нас есть одежда, что подходит
+                            вашему стилю и которой можно гордиться. Для женщин и мужчин.</p>
+                        <div class="footer__media-links-list">
+                            <button class="footer__media-link-button"><svg width="28" height="28">
                                     <use class="footer__media-link" href="./icons/sprite-media-link-icons.svg#twitter">
                                     </use>
-                                </svg>
-                                <svg width="28" height="28">
+                                </svg></button>
+                            <button class="footer__media-link-button"><svg width="28" height="28">
                                     <use class="footer__media-link" href="./icons/sprite-media-link-icons.svg#facebook">
                                     </use>
-                                </svg>
-                                <svg width="28" height="28">
+                                </svg></button>
+                            <button class="footer__media-link-button"><svg width="28" height="28">
                                     <use class="footer__media-link"
                                         href="./icons/sprite-media-link-icons.svg#instagram">
                                     </use>
-                                </svg>
-                                <svg width="28" height="28">
+                                </svg></button>
+                            <button class="footer__media-link-button"><svg width="28" height="28">
                                     <use class="footer__media-link" href="./icons/sprite-media-link-icons.svg#github">
                                     </use>
-                                </svg>
-                            </div>
-                        </article>
-                        <div class="footer__navigation-list-menu">
-                            <div class="footer__navigation-list-menu-first-row">
-                                <article class="footer__navigation-list-item">
-                                    <p class="footer__navigation-list-item-title">Компания</p>
-                                    <div>
-                                        <ul class="footer__navigation-list-item-menu text-comment">
-                                            <li class="footer__navigation-list-item-menu-item">О нас</li>
-                                            <li class="footer__navigation-list-item-menu-item">Функции</li>
-                                            <li class="footer__navigation-list-item-menu-item">Работы</li>
-                                            <li class="footer__navigation-list-item-menu-item">Карьера</li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <article class="footer__navigation-list-item">
-                                    <p class="footer__navigation-list-item-title">Помощь</p>
-                                    <div>
-                                        <ul class="footer__navigation-list-item-menu text-comment">
-                                            <li class="footer__navigation-list-item-menu-item">Поддержка</li>
-                                            <li class="footer__navigation-list-item-menu-item">Доставка</li>
-                                            <li class="footer__navigation-list-item-menu-item">Условия</li>
-                                            <li class="footer__navigation-list-item-menu-item">Политика</li>
-                                        </ul>
-                                    </div>
-                                </article>
-                            </div>
-                            <div class="footer__navigation-list-menu-second-row">
-                                <article class="footer__navigation-list-item">
-                                    <p class="footer__navigation-list-item-title">Вопросы</p>
-                                    <div>
-                                        <ul class="footer__navigation-list-item-menu text-comment">
-                                            <li class="footer__navigation-list-item-menu-item">Аккаунт</li>
-                                            <li class="footer__navigation-list-item-menu-item">О доставке</li>
-                                            <li class="footer__navigation-list-item-menu-item">Заказы</li>
-                                            <li class="footer__navigation-list-item-menu-item">Платежи</li>
-                                        </ul>
-                                    </div>
-                                </article>
-                                <article class="footer__navigation-list-item">
-                                    <p class="footer__navigation-list-item-title">Ресурсы</p>
-                                    <div>
-                                        <ul class="footer__navigation-list-item-menu text-comment">
-                                            <li class="footer__navigation-list-item-menu-item">Бесплатные книги</li>
-                                            <li class="footer__navigation-list-item-menu-item">Уроки</li>
-                                            <li class="footer__navigation-list-item-menu-item">Блог</li>
-                                            <li class="footer__navigation-list-item-menu-item">Плейлист на YouTube</li>
-                                        </ul>
-                                    </div>
-                                </article>
-                            </div>
+                                </svg></button>
+                        </div>
+                    </article>
+                    <div class="footer__navigation-list-menu">
+                        <div class="footer__navigation-list-menu-first-row">
+                            <article class="footer__navigation-list-item">
+                                <p class="footer__navigation-list-item-title">Компания</p>
+                                <div class="footer__navigation-list-items">
+                                    <a href="#" class="footer__navigation-item">Функции</a>
+                                    <a href="#" class="footer__navigation-item">О нас</a>
+                                    <a href="#" class="footer__navigation-item">Работа</a>
+                                    <a href="#" class="footer__navigation-item">Карьера</a>
+                                </div>
+                            </article>
+                            <article class="footer__navigation-list-item">
+                                <p class="footer__navigation-list-item-title">Помощь</p>
+                                <div class="footer__navigation-list-items">
+                                    <a href="#" class="footer__navigation-item">Поддержка</a>
+                                    <a href="#" class="footer__navigation-item">Доставка</a>
+                                    <a href="#" class="footer__navigation-item">Условия</a>
+                                    <a href="#" class="footer__navigation-item">Политика</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="footer__navigation-list-menu-second-row">
+                            <article class="footer__navigation-list-item">
+                                <p class="footer__navigation-list-item-title">Вопросы</p>
+                                <div class="footer__navigation-list-items">
+                                    <a href="#" class="footer__navigation-item">Аккаунт</a>
+                                    <a href="#" class="footer__navigation-item">О доставке</a>
+                                    <a href="#" class="footer__navigation-item">Заказы</a>
+                                    <a href="#" class="footer__navigation-item">Платежи</a>
+                                </div>
+                            </article>
+                            <article class="footer__navigation-list-item">
+                                <p class="footer__navigation-list-item-title">Ресурсы</p>
+                                <div class="footer__navigation-list-items">
+                                    <a href="#" class="footer__navigation-item">Бесплатные книги</a>
+                                    <a href="#" class="footer__navigation-item">Уроки</a>
+                                    <a href="#" class="footer__navigation-item">Блок</a>
+                                    <a href="#" class="footer__navigation-item">Плейлист YouTobe</a>
+                                </div>
+                            </article>
                         </div>
                     </div>
-                    <div class="footer__end">
-                        <p class="footer__end-text">
-                            Shop.co © 2000-2023, Все права защищены
-                        </p>
-                        <div class="footer__end-cards-list">
-                            <svg width="65" height="49">
-                                <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#Visa">
-                                </use>
-                            </svg>
-                            <svg width="65" height="49">
-                                <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#mastercard">
-                                </use>
-                            </svg>
-                            <svg width="65" height="49">
-                                <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#paypal">
-                                </use>
-                            </svg>
-                            <svg width="65" height="49">
-                                <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#ipay">
-                                </use>
-                            </svg>
-                            <svg width="65" height="49">
-                                <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#gpay">
-                                </use>
-                            </svg>
-                        </div>
+                </div>
+                <div class="footer__end">
+                    <p class="footer__end-text">
+                        Shop.co © 2000-2023, Все права защищены
+                    </p>
+                    <div class="footer__end-cards-list">
+                        <svg width="65" height="49">
+                            <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#Visa">
+                            </use>
+                        </svg>
+                        <svg width="65" height="49">
+                            <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#mastercard">
+                            </use>
+                        </svg>
+                        <svg width="65" height="49">
+                            <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#paypal">
+                            </use>
+                        </svg>
+                        <svg width="65" height="49">
+                            <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#ipay">
+                            </use>
+                        </svg>
+                        <svg width="65" height="49">
+                            <use class="footer__end-cards-list-icon" href="./icons/sprite-cards.svg#gpay">
+                            </use>
+                        </svg>
                     </div>
+                </div>
             </div>
         </footer>
     </main>

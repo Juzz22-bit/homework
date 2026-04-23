@@ -21,7 +21,7 @@
     }
 
     .burger__icon-cross,
-    .burger--open .burger__icon-menu {
+    .burger--open .burger__icon-burger {
         display: none;
     }
 }

@@ -19,6 +19,15 @@
     padding-bottom: 36px;
 }
 
+.Leaders-of-sales__list-item{
+    transition: var(--transition-time);
+}
+
+.Leaders-of-sales__list-item:hover{
+    box-shadow: 0 0 15px #777777;
+    border-radius: 15px;
+}
+
 @media (width <=992px) {
     .leader-4 {
         display: none;

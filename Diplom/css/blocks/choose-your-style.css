@@ -32,6 +32,12 @@
 
 .choose-your-style__list-img-container {
     position: relative;
+    transition: var(--transition-time);
+}
+
+.choose-your-style__list-img-container:hover{
+    box-shadow: 0 0 15px #777777;
+    border-radius: 15px;
 }
 
 .choose-your-style__link-text {

@@ -1,4 +1,6 @@
 .reviews__container {
+    max-width: 100%;
+    overflow: hidden;
     margin-bottom: 170px;
 }
 
@@ -43,14 +45,20 @@
 
 .reviews__list-item {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     border: 1px solid var(--border-color);
     border-radius: 20px;
     padding: 28px 32px;
-    width: 400px;
-    height: 240px;
+    width: 400px !important;
+    height: 240px !important;
     min-width: 358px;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
 }
+
 
 @media (width <=526px) {
     .reviews__list-item {

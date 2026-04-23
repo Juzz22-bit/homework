@@ -1,11 +1,18 @@
 .hero {
     background: #f2f0f1;
-    z-index: -1;
+    z-index: 0;
     position: relative;
 }
 
 .hero__container {
-    display: flex;
+    display: grid;
+    padding: 0px;
+    background-image: url(../../Images/big-star.png),
+    url(../../Images/small-star.png),
+    url(../../Images/fashion-menschen.png);
+    background-size: 104px 104px, 56px 56px, auto;
+    background-position: 100% 20%, 50% 50%, 60% 40%;
+    background-repeat: no-repeat, no-repeat, no-repeat;
 }
 
 @media (width <=1440px) {
@@ -14,12 +21,19 @@
     }
 }
 
+@media (width <=992px){
+    .hero__container{
+        display: flex;
+        align-items: center;
+        background-image: none
+    }
+}
+
 .hero__main-info {
     z-index: 2;
     display: flex;
     flex-direction: column;
     padding-top: 97px;
-    margin-bottom: 116px;
 }
 
 @media (width <=992px) {
@@ -77,9 +91,16 @@
     background: var(--main-color);
     color: white;
     margin-bottom: 48px;
+    transition: var(--transition-time);
 }
 
-@media (width <=768px) {
+
+.hero__main-info-button:hover {
+    box-shadow: 0 0 15px #777777;
+    color: #cacaca;
+}
+
+@media (width <=992px) {
     .hero__main-info-button {
         width: 100%;
         justify-content: center;
@@ -88,6 +109,7 @@
 
 .hero__main-info-achievements {
     display: flex;
+    margin-bottom: 116px;
 }
 
 .hero__main-info-achievements-first-row,
@@ -96,7 +118,17 @@
     align-items: center;
 }
 
-@media (width <=768px) {
+@media (width <=1280px) {
+    .hero__main-info-achievements {
+        justify-content: center;
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (width <=992px) {
     .hero__main-info-achievements {
         justify-content: center;
         flex-direction: column;
@@ -152,40 +184,43 @@
 }
 
 .hero__img {
-    overflow: hidden;
-    position: absolute;
-    left: 24%;
-    z-index: 0;
+    top: -64px;
+    left: 50%;
+    z-index: -2;
 }
 
 @media (width <=992px) {
     .hero__img {
         position: relative;
         left: 0%;
+        top: 0;
     }
 }
 
-@media (width < 992px) {
+
+@media (width < 1440px) {
     .hero__img-picture-people {
-        transform: translateX(-25%);
+        max-width: 100%;
+        height: auto;
     }
 }
 
-@media (width <= 526px) {
+@media (width <=526px) {
     .hero__img-picture-people {
         display: none;
     }
 }
 
-@media (width > 526px) {
+@media (width > 992px) {
     .hero__img-picture-people-small {
         display: none;
     }
 }
 
-@media (width < 526px) {
+@media (width < 1368px) {
     .hero__img-picture-people-small {
         position: relative;
+        width: 410px;
         left: 0%;
         padding: 0;
         margin: 0;
@@ -199,7 +234,7 @@
 
 .star-1 {
     left: 53%;
-    top: 42%;
+    top: 33%;
     width: 56px;
     height: 56px;
 }
@@ -215,14 +250,14 @@
 
 .star-2 {
     top: 10%;
-    right: 6%;
+    right: 33%;
     width: 104px;
     height: 104px;
 }
 
 @media (width < 1440px) {
     .star-2 {
-        right: 5%;
+        right: 10%;
         width: 76px;
         height: 76px;
     }

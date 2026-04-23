@@ -1,7 +1,6 @@
 import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
-import { productSlider } from "./product-slider.js";
-import { sizes } from "./sizes.js";
+import {reviewsSlider} from "./reviews.js"
 
 try {
   const headerFixed = new HeaderFixed({
@@ -28,8 +27,7 @@ try {
     headerFixed
   );
 
-  productSlider();
-  sizes();
+reviewsSlider();
 } catch (error) {
   console.error(error);
 }
