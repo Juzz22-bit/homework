@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#101820">
+  <meta name="description"
+        content="Reliable handyman services for your home.
+        Home repairs, furniture assembly, painting and installations.">
+
+  <title>My Handyman | Reliable Home Services</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/index.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#top" class="logo">
+        <span class="logo-icon">M<span>+</span></span>
+        <span>MY HANDYMAN</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#process">How It Works</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="btn btn-small">Book a Service ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero section">
+      <div class="container hero-grid">
+
+        <div class="hero-content reveal">
+          <div class="eyebrow">
+            <span class="status-dot"></span>
+            YOUR LOCAL HOME REPAIR SERVICE
+          </div>
+
+          <h1>
+            Your Home.
+
+            <span>Our Expertise.</span>
+          </h1>
+
+          <p class="hero-description">
+            From small fixes to bigger home projects, we help keep
+            your home working exactly as it should.
+            Reliable service, quality work, and no unnecessary hassle.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#booking" class="btn">
+              Book a Service <span>↗</span>
+            </a>
+            <a href="#services" class="btn btn-outline">
+              Explore Services
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span class="check-icon">✓</span>
+            Home repairs made simple
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay-2">
+          <div class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=85"
+              alt="Professional handyman working on a home repair"
+              fetchpriority="high">
+
+            <div class="image-label">
+              <span class="label-icon">✦</span>
+              <div>
+                <strong>Quality in every detail</strong>
+                <small>Practical solutions for your home</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-decoration"></div>
+        </div>
+
+      </div>
+
+      <div class="hero-bottom container">
+        <span>REPAIR</span>
+        <span class="hero-bottom-line"></span>
+        <span>IMPROVE</span>
+        <span class="hero-bottom-line"></span>
+        <span>MAINTAIN</span>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section services-section" id="services">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow">WHAT WE CAN DO FOR YOU</div>
+            <h2>Small fixes.
+<span>Big peace of mind.</span></h2>
+          </div>
+
+          <p>
+            One reliable point of contact for
+            the everyday jobs
+            that make your house feel like home.
+          </p>
+        </div>
+
+        <div class="services-grid stagger">
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">⌂</div>
+            <span class="service-number">01</span>
+            <h3>Home Repairs</h3>
+            <p>
+              Loose handles, damaged fittings, squeaky doors
+              and other everyday household fixes.
+            </p>
+            <a href="#booking" class="text-link" data-service="Home Repairs">
+              Request this service <span>↗</span>
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">▦</div>
+            <span class="service-number">02</span>
+            <h3>Furniture Assembly</h3>
+            <p>
+              Furniture assembly and installation, handled
+              carefully from start to finish.
+            </p>
+            <a href="#booking" class="text-link"
+               data-service="Furniture Assembly">
+              Request this service <span>↗</span>
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">✳</div>
+            <span class="service-number">03</span>
+            <h3>Painting & Finishing</h3>
+            <p>
+              Refresh your space with careful painting,
+              touch-ups and finishing work.
+            </p>
+            <a href="#booking" class="text-link"
+               data-service="Painting & Finishing">
+              Request this service <span>↗</span>
+            </a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">⌁</div>
+            <span class="service-number">04</span>
+            <h3>Installations</h3>
+            <p>
+              Help with shelves, curtain rails, fittings
+              and other suitable household installations.
+            </p>
+            <a href="#booking" class="text-link"
+               data-service="Installations">
+              Request this service <span>↗</span>
+            </a>
+          </article>
+
+        </div>
+
+        <p class="section-footnote reveal">
+          Not sure whether your job is covered? Send a request
+          and describe what you need.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1000&q=85"
+            alt="Tools prepared for home maintenance work"
+            loading="lazy">
+
+          <div class="about-caption">
+            <span class="about-caption-symbol">✳</span>
+            <div>
+              <strong>Done with care.</strong>
+              <small>Focused on the details that matter.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal reveal-delay-1">
+          <div class="eyebrow">A PRACTICAL APPROACH</div>
+
+          <h2>Good work starts
+with <span>good service.</span></h2>
+
+          <p>
+            Looking after a home takes time. My Handyman is here
+            to make everyday repairs and home improvements easier
+            with a straightforward, personal approach.
+          </p>
+
+          <div class="benefit-list">
+            <div class="benefit">
+              <span class="benefit-check">✓</span>
+              <div>
+                <h3>Clear Communication</h3>
+                <p>Explain the job and discuss the next steps.</p>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <span class="benefit-check">✓</span>
+              <div>
+                <h3>Careful Workmanship</h3>
+                <p>Attention to detail throughout the job.
+                    </p>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <span class="benefit-check">✓</span>
+              <div>
+                <h3>Simple Booking Requests</h3>
+                <p>Tell us what you need and request a suitable time.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#booking" class="btn">
+            Tell Us About Your Project <span>↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section process-section" id="process">
+      <div class="container">
+
+        <div class="section-heading section-heading-center reveal">
+          <div>
+            <div class="eyebrow">STRAIGHTFORWARD FROM THE START</div>
+            <h2>How it <span>works.</span></h2>
+          </div>
+
+          <p>
+            A simple process designed to get your home project moving.
+          </p>
+        </div>
+
+        <div class="process-grid stagger">
+
+          <article class="process-card reveal">
+            <span class="process-number">01</span>
+            <h3>Tell Us What You Need</h3>
+            <p>
+              Choose a service, describe the job and provide
+              your preferred date.
+            </p>
+          </article>
+
+          <article class="process-card reveal">
+            <span class="process-number">02</span>
+            <h3>We Review Your Request</h3>
+            <p>
+              Your requested time is not confirmed until
+              the handyman responds.
+            </p>
+          </article>
+
+          <article class="process-card reveal">
+            <span class="process-number">03</span>
+            <h3>Confirm the Details</h3>
+            <p>
+              Agree on the appointment and any remaining
+              job details before work begins.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section class="section booking-section" id="booking">
+      <div class="container booking-grid">
+
+        <div class="booking-intro reveal">
+          <div class="eyebrow">LET'S GET IT SORTED</div>
+          <h2>What's on your
+<span>to-do list?</span></h2>
+
+          <p>
+            Tell us a little about the job. Submit your preferred
+            date and time, and we can discuss the details.
+          </p>
+
+          <div class="booking-info">
+            <span class="booking-info-icon">i</span>
+            <p>
+              <strong>Appointment requests only</strong>
+
+              Your preferred date and time are not confirmed
+              until the handyman responds.
+            </p>
+          </div>
+
+          <div class="booking-promise">
+            <span>✓</span> No automatic booking confirmation
+          </div>
+        </div>
+
+        <div class="booking-form-wrap reveal reveal-delay-1">
+          <form id="bookingForm" class="booking-form">
+
+            <div class="form-heading">
+              <span class="form-step">SERVICE REQUEST</span>
+              <h3>Request an appointment</h3>
+              <p>Fields marked with * are required.</p>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input
+                  id="fullName"
+                  name="fullName"
+                  type="text"
+                  autocomplete="name"
+                  placeholder="Your name"
+                  minlength="2"
+                  maxlength="100"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  maxlength="254"
+                  required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  autocomplete="tel"
+                  placeholder="Your phone number"
+                  maxlength="30">
+              </div>
+
+              <div class="form-group">
+                <label for="service">Select a Service *</label>
+                <select id="service" name="service" required>
+                  <option value="">Choose a service</option>
+                  <option value="Home Repairs">Home Repairs</option>
+                  <option value="Furniture Assembly">
+                    Furniture Assembly
+                  </option>
+                  <option value="Painting & Finishing">
+                    Painting & Finishing
+                  </option>
+                  <option value="Installations">Installations</option>
+                  <option value="Other">Other / Not Sure</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date *</label>
+                <input
+                  id="date"
+                  name="date"
+                  type="date"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="time">Preferred Time *</label>
+                <select id="time" name="time" required>
+                  <option value="">Choose a time</option>
+                  <option value="Morning">Morning (08:00–12:00)</option>
+                  <option value="Afternoon">Afternoon (12:00–17:00)</option>
+                  <option value="Evening">Evening (17:00–20:00)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="address">Service Address *</label>
+              <input
+                id="address"
+                name="address"
+                type="text"
+                autocomplete="street-address"
+                placeholder="Street, city and postal code"
+                maxlength="250"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="details">Tell Us About the Job *</label>
+              <textarea
+                id="details"
+                name="details"
+                rows="4"
+                minlength="10"
+                maxlength="2000"
+                placeholder="Describe the repair or work you need..."
+                required></textarea>
+              <span class="field-hint">
+                Please provide at least 10 characters.
+              </span>
+            </div>
+
+            <label class="consent-row" for="consent">
+              <input
+                id="consent"
+                name="consent"
+                type="checkbox"
+                required>
+              <span>
+                I agree to be contacted about this service request. *
+              </span>
+            </label>
+
+            <button type="submit" class="btn btn-submit">
+              Submit Request <span>↗</span>
+            </button>
+
+            <p class="form-disclaimer">
+              This form is a demo and does not send your information
+              to the handyman yet. No appointment is confirmed by
+              submitting this form.
+            </p>
+
+            <div
+              class="form-message"
+              id="formMessage"
+              role="status"
+              aria-live="polite"
+              tabindex="-1"
+              hidden>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-inner reveal">
+        <div>
+          <div class="eyebrow">HAVE A PROJECT IN MIND?</div>
+          <h2>Let's make your home
+<span>work better.</span></h2>
+        </div>
+
+        <a href="#booking" class="btn">
+          Request a Service <span>↗</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-main">
+      <a href="#top" class="logo">
+        <span class="logo-icon">M<span>+</span></span>
+        <span>MY HANDYMAN</span>
+      </a>
+
+      <p>Practical help for a home that works better.</p>
+
+      <a href="#top" class="back-top">
+        Back to top ↑
+      </a>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="currentYear"></span> My Handyman</span>
+      <span>Built with care.</span>
+    </div>
+  </footer>
+
+</body>
+</html>

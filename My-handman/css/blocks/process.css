@@ -1,0 +1,49 @@
+/* PROCESS */
+
+.process-section {
+  background: var(--bg-soft);
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.process-card {
+  padding: 35px 30px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.025);
+  transition:
+    transform var(--transition),
+    background var(--transition),
+    border-color var(--transition);
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(243, 166, 65, 0.45);
+}
+
+.process-number {
+  display: inline-block;
+  margin-bottom: 26px;
+  color: var(--accent);
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.08em;
+}
+
+.process-card h3 {
+  margin-bottom: 14px;
+  font-size: 1.15rem;
+}
+
+.process-card p {
+  font-size: 0.9rem;
+  line-height: 1.85;
+}
