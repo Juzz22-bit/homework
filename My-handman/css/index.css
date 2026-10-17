@@ -1,0 +1,16 @@
+@import "./blocks/root.css";
+@import "./blocks/reset.css";
+@import "./blocks/navigation.css";
+@import "./blocks/buttons.css";
+@import "./blocks/hero.css";
+@import "./blocks/services.css";
+@import "./blocks/about.css";
+@import "./blocks/process.css";
+@import "./blocks/CTA.css";
+@import "./blocks/footer.css";
+@import "./blocks/scroll.css";
+@import "./blocks/recponsive.css";
+@import "./blocks/accessibility.css";
+@import "./blocks/booking.css";
+
+

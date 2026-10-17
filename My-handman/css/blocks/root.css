@@ -1,0 +1,21 @@
+:root {
+  --bg: #101820;
+  --bg-soft: #151f29;
+  --bg-card: #192630;
+  --bg-light: #f4f5f2;
+  --white: #ffffff;
+  --text: #f5f7f8;
+  --text-muted: #aab5be;
+  --dark-text: #17212a;
+  --dark-muted: #65717b;
+  --accent: #f3a641;
+  --accent-hover: #ffbb60;
+  --border: rgba(255, 255, 255, 0.1);
+
+  --font-heading: "Manrope", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  --container: 1160px;
+  --radius: 18px;
+  --transition: 0.3s ease;
+}

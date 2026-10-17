@@ -1,0 +1,31 @@
+/* CONTACT CTA */
+
+.contact-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.contact-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+  padding: 55px;
+  border: 1px solid rgba(243, 166, 65, 0.3);
+  border-radius: 20px;
+  background:
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(243, 166, 65, 0.11),
+      transparent 40%
+    ),
+    var(--bg-soft);
+}
+
+.contact-inner .eyebrow {
+  margin-bottom: 15px;
+}
+
+.contact-inner h2 {
+  font-size: clamp(2rem, 4vw, 3.1rem);
+}
